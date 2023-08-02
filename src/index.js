@@ -1,10 +1,26 @@
 import "./styles/style.css";
 import "./styles/homepage.css";
 import "./styles/about-page.css"
-import loadHomepage from './pages/homepage';
+import loadHomePage from './pages/homepage';
+import loadAboutPage from './pages/about-page';
 
-//loadHomepage();
+window.onload = loadHomePage();
 
-content = document.getElementById('content');
-content.classList.add("sup")
+const homePageLink = document.getElementById('home-link');
+homePageLink.addEventListener('click', homePageLinkClick, false)
+
+function homePageLinkClick(event) {
+  loadHomePage();
+
+  event.preventDefault();
+}
+
+const aboutLink = document.getElementById('about-link');
+aboutLink.addEventListener('click', aboutLinkClick, false);
+
+function aboutLinkClick(event) {
+  loadAboutPage();
+
+  event.preventDefault();
+}
 

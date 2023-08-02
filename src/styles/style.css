@@ -4,7 +4,6 @@
   --main-brighter-subcolor: #FFEC4E;
   --main-shade-color: #222222;
   --main-clean-color: #FFFFFF;
-
 }
 
 
@@ -43,10 +42,10 @@ body {
   background-color: var(--main-bg-color);
 }
 
-#header-logo-place {
+#home-link {
   color: var(--main-brighter-subcolor);
 
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 #header-links-place {
@@ -56,8 +55,8 @@ body {
   font-size: 1.2em;
 }
 
-#header-button-place {
-
+.header-link:hover {
+  color: var(--main-clean-color);
 }
 
 #header-button {
@@ -68,6 +67,11 @@ body {
   height: 50px;
 
   border-radius: 5%;
+
+}
+
+#header-button:hover {
+  background-color: var(--main-clean-color);
 }
 
 #footer {

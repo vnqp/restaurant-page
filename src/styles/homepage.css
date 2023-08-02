@@ -108,3 +108,7 @@
   font-size: 1.3em;
 }
 
+#homepage-content-button:hover {
+  background-color: var(--main-clean-color);
+}
+

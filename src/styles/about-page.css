@@ -17,7 +17,7 @@
   align-items: center;
   gap: 50px;
 
-  width: 30vw;
+  width: 40vw;
   height: 600px;
 }
 
@@ -27,23 +27,39 @@
   margin: 0;
   padding: 0;
 
+  color: var(--main-subcolor);
+
 }
 
 #about-content-left-title-img-area {
   display: flex;
-  gap: 100px;
+  justify-content: center;
+  gap: 1vw;
 
   height: 450px;
   width: 100%;
-
-  background-color: black;
 }
 
 .about-content-left-title-img {
-  height: 450px;
-  width: 40%;
+  height: 500px;
+  width: clamp(200px, 50%, 300px);
 
-  color: aqua;
+  border: 2px solid var(--main-subcolor);
+
+  color: var(--main-bg-color);
+  background-color: var(--main-subcolor);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#about-content-left-title-img-1 {
+  background-image: url(../assets/imgs/restaurant-front.png);
+}
+
+#about-content-left-title-img-2 {
+  background-image: url(../assets/imgs/restaurant-inside-2.png);
 }
 
 

@@ -1,3 +1,5 @@
+import loadAboutPage from './about-page';
+
 export default function loadHomepage() {
   const contentDiv = document.getElementById('content');
   contentDiv.innerHTML = ''
@@ -48,6 +50,7 @@ export default function loadHomepage() {
         const homepageContentButton = document.createElement('button');
           homepageContentButton.id = 'homepage-content-button';
           homepageContentButton.textContent = "ORDER NOW!"; 
+          homepageContentButton.onclick = () => {loadAboutPage()};
           homepageContentImgButtonPlace.appendChild(homepageContentButton);
 
       homepageContentImgShade.appendChild(homepageContentImgButtonPlace);
