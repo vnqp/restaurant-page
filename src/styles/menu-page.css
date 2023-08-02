@@ -1,3 +1,5 @@
+
+
 #menu-title-place {
   display: flex;
   align-items: center;
@@ -19,7 +21,7 @@
 
   border-right: 2px solid var(--main-subcolor);
 
-  height: 150px;
+  height: 100px;
 
   margin: 0;
   padding: 0;
@@ -33,11 +35,13 @@
 #menu-items-place {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, clamp(400px, 20vw, 600px) );
+  grid-template-columns: repeat(auto-fill, clamp(400px, 20vw, 600px) );
   gap: 50px;
 
   min-height: 800px;
+  padding: clamp(200px, 2vw, 500px);
   padding-top: 50px;
+  padding-bottom: 50px;
 
   background-color: #243054;
 }
@@ -47,6 +51,13 @@
 
   background-color: var(--main-bg-color);
   color: var(--main-subcolor);
+
+  border-radius: 10px;
+}
+
+.menu-item:hover {
+ height: 105%;
+ width: 105%;
 }
 
 .menu-item-photo {
@@ -58,11 +69,23 @@
   background-repeat: no-repeat;
 }
 
+.menu-item-name {
+  height: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.2em;
+}
+
+/* Items IDS for background images */
+
 #pizza {
   background-image: url(../assets/imgs/pizza.jpg);
 }
 
-#taco {
+#tacos {
   background-image: url(../assets/imgs/tacos.jpg);
 }
 
@@ -90,17 +113,3 @@
 #milk-shake {
   background-image: url(../assets/imgs/milk-shake.jpg);
 }
-
-.menu-item-name {
-  height: 30%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 1.2em;
-}
-
-
-
-

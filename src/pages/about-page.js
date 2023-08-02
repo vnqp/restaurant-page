@@ -33,7 +33,7 @@ export default function loadAboutPage () {
         
         const aboutContentTextTitle = document.createElement('h3');
         aboutContentTextTitle.id = 'about-content-text-title';
-        aboutContentTextTitle.innerText = 'Qpower, Elevating Fast Food to Fine Dining!';
+        aboutContentTextTitle.innerText = 'Qpower! Elevating Fast Food to Fine Dining!';
 
         const aboutContentText1 = document.createElement('p');
         aboutContentText1.classList.add('about-content-text');
