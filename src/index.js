@@ -1,7 +1,7 @@
 import "./styles/homepage.css";
-import printMe from './print.js';
+import loadHomepage from './pages/homepage';
 
-printMe();
+loadHomepage();
 
 content = document.getElementById('content');
 content.classList.add("sup")

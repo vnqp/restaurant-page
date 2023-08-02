@@ -1,11 +1,12 @@
 :root {
-  --main-bg-color: #290628;
+  --main-bg-color: #1d1a05;
   --main-subcolor: #FFCA1F;
   --main-brighter-subcolor: #FFEC4E;
-  --main-shade-color: #243054;
+  --main-shade-color: #222222;
   --main-clean-color: #FFFFFF;
 
 }
+
 
 a {
   color: var(--main-brighter-subcolor);
@@ -33,6 +34,8 @@ body {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+
 #header {
   display: flex;
   align-items: center;
@@ -40,6 +43,12 @@ body {
 
   height: 125px;
   background-color: var(--main-bg-color);
+}
+
+#header-logo-place {
+  color: var(--main-brighter-subcolor);
+
+  font-size: 1.5em;
 }
 
 #header-links-place {
@@ -76,6 +85,7 @@ body {
   color: var(--main-clean-color)
 }
 
+
 #hero-about-place {
   display: flex;
   flex-direction: column;
@@ -104,6 +114,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 #homepage-content {
@@ -121,12 +132,12 @@ body {
 }
 
 #homepage-content-border {
-  width: 95%;
-  border: 10px solid var(--main-brighter-subcolor);
+  width: 80%;
+  border: 6px solid var(--main-brighter-subcolor);
 }
 
 #homepage-content-img-place {
-  width: 95%;
+  width: 75%;
   height: 100%;
 
 
@@ -173,5 +184,17 @@ body {
 
 #footer {
   height: 125px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--main-clean-color);
   background-color: var(--main-shade-color);
+
+
+}
+
+#footer a {
+  color: white;
 }
