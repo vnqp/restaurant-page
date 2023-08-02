@@ -1,26 +1,28 @@
 import "./styles/style.css";
 import "./styles/homepage.css";
-import "./styles/about-page.css"
+import "./styles/about-page.css";
+import "./styles/menu-page.css";
 import loadHomePage from './pages/homepage';
 import loadAboutPage from './pages/about-page';
+import loadMenuPage from './pages/menu-page';
 
-window.onload = loadHomePage();
+// window.onload = loadHomePage();
 
-const homePageLink = document.getElementById('home-link');
-homePageLink.addEventListener('click', homePageLinkClick, false)
+// const homePageLink = document.getElementById('home-link');
+// homePageLink.addEventListener('click', homePageLinkClick, false)
 
-function homePageLinkClick(event) {
-  loadHomePage();
+// function homePageLinkClick(event) {
+//   loadHomePage();
 
-  event.preventDefault();
-}
+//   event.preventDefault();
+// }
 
-const aboutLink = document.getElementById('about-link');
-aboutLink.addEventListener('click', aboutLinkClick, false);
+// const aboutLink = document.getElementById('about-link');
+// aboutLink.addEventListener('click', aboutLinkClick, false);
 
-function aboutLinkClick(event) {
-  loadAboutPage();
+// function aboutLinkClick(event) {
+//   loadAboutPage();
 
-  event.preventDefault();
-}
+//   event.preventDefault();
+// }
 
